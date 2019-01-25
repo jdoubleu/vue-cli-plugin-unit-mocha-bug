@@ -1,26 +1,10 @@
-# vue-cli-test-mocha-plugin-bug
+# Vue cli-plugin-unit-mocha bug
+See issue [#3370](https://github.com/vuejs/vue-cli/issues/3370)
 
-## Project setup
-```
-npm install
-```
+## Steps to reproduce
+1. Install project `npm install`
+2. Run serve command in test env: `NODE_ENV=test npm run serve`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## Workaround
+See [`vue.config.js`](./vue.config.js) for a workaround.
+Set environment variable: `export FIX_BUG=true`
